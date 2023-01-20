@@ -98,6 +98,7 @@ class ShipmentRequestBuilder implements ShipmentRequestBuilderInterface
         string $street,
         string $name,
         string $company = null,
+        string $companyDivision = null,
         string $email = null,
         string $phone = null,
         string $mobile = null,
@@ -111,6 +112,7 @@ class ShipmentRequestBuilder implements ShipmentRequestBuilderInterface
         $this->data['recipientAddress']['street'] = $street;
         $this->data['recipientAddress']['name'] = $name;
         $this->data['recipientAddress']['company'] = $company;
+        $this->data['recipientAddress']['companyDivision'] = $companyDivision;
         $this->data['recipientAddress']['email'] = $email;
         $this->data['recipientAddress']['phone'] = $phone;
         $this->data['recipientAddress']['mobile'] = $mobile;
@@ -396,6 +398,7 @@ class ShipmentRequestBuilder implements ShipmentRequestBuilderInterface
             $recipient->setProvince($recipientAddress['state'] ?? '');
             $recipient->setContact($recipientAddress['contactPerson'] ?? '');
             $recipient->setName2($recipientAddress['company'] ?? '');
+            $recipient->setName3($recipientAddress['companyDivision'] ?? '');
             $recipient->setComments($recipientAddress['comment'] ?? '');
 
             $request->setDeliveryAddress($recipient);

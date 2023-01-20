@@ -64,6 +64,7 @@ interface ShipmentRequestBuilderInterface extends LabelRequestBuilderInterface
      * @param string $street
      * @param string $name
      * @param string|null $company
+     * @param string|null $companyDivision
      * @param string|null $email
      * @param string|null $phone
      * @param string|null $mobile
@@ -79,6 +80,7 @@ interface ShipmentRequestBuilderInterface extends LabelRequestBuilderInterface
         string $street,
         string $name,
         string $company = null,
+        string $companyDivision = null,
         string $email = null,
         string $phone = null,
         string $mobile = null,
