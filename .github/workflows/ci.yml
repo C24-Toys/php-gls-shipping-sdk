@@ -19,3 +19,9 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
+
+    - name: Install dependencies
+      run: composer install --no-progress
+
+    - name: Run phpunit
+      run: composer test
