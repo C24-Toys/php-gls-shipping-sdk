@@ -135,8 +135,8 @@ class CancellationService implements CancellationServiceInterface
 
         $statuses = $cancellationResponse->getStatus();
         $status = array_shift($statuses);
-        if ($status->getCode() !== 'E000') {
-            $message = sprintf('[%s] %s: %s', $status->getCode(), $status->getParcelId(), $status->getInfo());
+        if ($status?->getCode() !== 'E000') {
+            $message = sprintf('[%s] %s: %s', $status?->getCode(), $status?->getParcelId(), $status?->getInfo());
             throw new DetailedServiceException($message);
         }
 

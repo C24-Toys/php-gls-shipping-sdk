@@ -42,8 +42,17 @@
     }
   },
   "scripts": {
+    "stan" : [
+      "vendor/bin/phpstan analyze src --level 8"
+    ],
     "test": [
-      "./vendor/bin/phpunit -c test/phpunit.xml"
+      "vendor/bin/phpunit -c test/phpunit.xml"
+    ],
+    "phpcs": [
+      "vendor/bin/phpcs --standard=PSR12 src test"
+    ],
+    "phpcs-fix": [
+      "vendor/bin/phpcbf --standard=PSR12 src test"
     ]
   }
 }

@@ -53,8 +53,11 @@ class ShipmentServiceTest extends TestCase
      * @param callable $assert
      * @throws ServiceException
      */
-    public function performRequest(CreateShipmentRequestType $shipmentRequest, string $responseBody, callable $assert)
-    {
+    public function performRequest(
+        CreateShipmentRequestType $shipmentRequest,
+        string $responseBody,
+        callable $assert,
+    ): void {
         $logger = new TestLogger();
         $httpClient = new Client();
         $responseFactory = Psr17FactoryDiscovery::findResponseFactory();
