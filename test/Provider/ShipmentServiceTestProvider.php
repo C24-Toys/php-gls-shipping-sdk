@@ -32,7 +32,7 @@ class ShipmentServiceTestProvider
             $postalCode = '04229',
             $city = 'Leipzig',
             $street = 'Nonnenstraße 11d',
-            $name = 'Hans Muster'
+            $name = 'Hans Muster',
         );
         $requestBuilder->setReferenceNumbers(['1000000302']);
         $requestBuilder->addParcel(0.95, '1000000302-A');
@@ -96,6 +96,7 @@ class ShipmentServiceTestProvider
             $city = 'Leipzig',
             $street = 'Nonnenstraße 11d',
             $name = 'Hans Muster',
+            null,
             null,
             $email = 'h.muster@gmx.de'
         );
@@ -273,6 +274,7 @@ class ShipmentServiceTestProvider
             $city = 'Leipzig',
             $street = 'Nonnenstraße 11d',
             $name = 'Hans Muster',
+            null,
             null,
             $email = 'h.muster@gmx.de',
             null,

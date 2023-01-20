@@ -16,17 +16,19 @@ use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\Test\TestLogger;
 
+use function file_get_contents;
+
 class CancellationServiceTest extends TestCase
 {
     /**
      * @return string[][]|callable[][]
      */
-    public function multiParcelDataProvider()
+    public function multiParcelDataProvider(): array
     {
         return [
             'mixed' => [
                 'request' => ['12345678901', '12345678902', '1234567890'],
-                'response' => \file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_response.json'),
+                'response' => file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_response.json'),
                 'expected' => ['12345678901', '12345678902'],
             ],
         ];
@@ -35,17 +37,17 @@ class CancellationServiceTest extends TestCase
     /**
      * @return string[][]
      */
-    public function singleParcelErrorProvider()
+    public function singleParcelErrorProvider(): array
     {
         return [
             'failure' => [
                 'request' => '1234567890',
-                'response' => \file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_error.json'),
+                'response' => file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_error.json'),
                 'expected' => DetailedServiceException::class,
             ],
             'success' => [
                 'request' => '12345678901',
-                'response' => \file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_success.json'),
+                'response' => file_get_contents(__DIR__ . '/../Provider/_files/200_cancellation_success.json'),
                 'expected' => '',
             ],
         ];
@@ -62,7 +64,7 @@ class CancellationServiceTest extends TestCase
      * @param string[] $expected
      * @throws ServiceException
      */
-    public function cancelMultiParcel(array $requestedIds, string $responseBody, array $expected)
+    public function cancelMultiParcel(array $requestedIds, string $responseBody, array $expected): void
     {
         $logger = new TestLogger();
         $httpClient = new Client();
@@ -93,10 +95,10 @@ class CancellationServiceTest extends TestCase
      * @param string $errorType
      * @throws ServiceException
      */
-    public function cancelSingleParcel(string $requestedId, string $responseBody, string $errorType)
+    public function cancelSingleParcel(string $requestedId, string $responseBody, string $errorType): void
     {
         if ($errorType) {
-            self::expectException($errorType);
+            $this->expectException($errorType);
         }
 
         $logger = new TestLogger();

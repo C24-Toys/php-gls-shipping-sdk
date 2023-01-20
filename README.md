@@ -39,19 +39,19 @@ The GLS Parcel Processing API SDK package offers an interface to the following w
 ## Installation
 
 ```bash
-$ composer require glsgroup/sdk-api-parcel-processing
+$ composer require c24toys/gls-shipping-sdk-api
 ```
 
 ## Uninstallation
 
 ```bash
-$ composer remove glsgroup/sdk-api-parcel-processing
+$ composer remove c24toys/gls-shipping-sdk-api
 ```
 
 ## Testing
 
 ```bash
-$ ./vendor/bin/phpunit -c test/phpunit.xml
+$ composer test
 ```
 
 ## Features
