@@ -45,7 +45,7 @@ $ composer require c24toys/gls-shipping-sdk-api
 ## Uninstallation
 
 ```bash
-$ composer remove 24toys/gls-shipping-sdk-api
+$ composer remove c24toys/gls-shipping-sdk-api
 ```
 
 ## Testing
