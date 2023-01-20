@@ -51,7 +51,7 @@ $ composer remove c24toys/gls-shipping-sdk-api
 ## Testing
 
 ```bash
-$ ./vendor/bin/phpunit -c test/phpunit.xml
+$ composer test
 ```
 
 ## Features
