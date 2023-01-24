@@ -39,13 +39,13 @@ The GLS Parcel Processing API SDK package offers an interface to the following w
 ## Installation
 
 ```bash
-$ composer require c24toys/gls-shipping-sdk-api
+$ composer require c24-toys/php-gls-shipping-sdk
 ```
 
 ## Uninstallation
 
 ```bash
-$ composer remove c24toys/gls-shipping-sdk-api
+$ composer remove c24-toys/php-gls-shipping-sdk
 ```
 
 ## Testing
@@ -84,11 +84,11 @@ The library's components suitable for consumption comprise
 
 ```php
 $logger = new \Psr\Log\NullLogger();
-$serviceFactory = new \GlsGroup\Sdk\ParcelProcessing\Service\ServiceFactory();
+$serviceFactory = new \C24Toys\GLS\Sdk\ParcelProcessing\Service\ServiceFactory();
 $service = $serviceFactory->createShipmentService('basicAuthUser', 'basicAuthPass', $logger, $sandbox = true);
 
 // REGULAR SHIPMENT
-$requestBuilder = new \GlsGroup\Sdk\ParcelProcessing\RequestBuilder\ShipmentRequestBuilder();
+$requestBuilder = new \C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder\ShipmentRequestBuilder();
 $requestBuilder->setShipperAccount($shipperId = '98765 43210');
 $requestBuilder->setRecipientAddress(
     $country = 'DE',
@@ -109,7 +109,7 @@ foreach ($shipment->getLabels() as $i => $label) {
 }
 
 // RETURN SHIPMENT
-$requestBuilder = new \GlsGroup\Sdk\ParcelProcessing\RequestBuilder\ReturnShipmentRequestBuilder();
+$requestBuilder = new \C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder\ReturnShipmentRequestBuilder();
 $requestBuilder->setShipperAccount($shipperId = '98765 43210');
 $requestBuilder->setShipperAddress(
     $country = 'DE',
@@ -148,7 +148,7 @@ The library's components suitable for consumption comprise
 
 ```php
 $logger = new \Psr\Log\NullLogger();
-$serviceFactory = new \GlsGroup\Sdk\ParcelProcessing\Service\ServiceFactory();
+$serviceFactory = new \C24Toys\GLS\Sdk\ParcelProcessing\Service\ServiceFactory();
 $service = $serviceFactory->createCancellationService('basicAuthUser', 'basicAuthPass', $logger, $sandbox = true);
 
 $cancelledIds = $service->cancelParcels([$parcelIdA = '12345', $parcelIdB = '54321']);

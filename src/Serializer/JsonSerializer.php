@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Serializer;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Serializer;
 
 /**
  * JsonSerializer

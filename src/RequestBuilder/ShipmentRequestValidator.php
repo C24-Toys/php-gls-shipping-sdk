@@ -6,10 +6,10 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\RequestBuilder;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\LabelRequestBuilderInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\RequestValidatorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\LabelRequestBuilderInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\RequestValidatorException;
 
 class ShipmentRequestValidator
 {

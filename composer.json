@@ -1,5 +1,5 @@
 {
-  "name": "c24toys/sdk-api-parcel-processing",
+  "name": "c24-toys/php-gls-shipping-sdk",
   "description": "SDK for GLS Web API for Parcel Processing",
   "license": "MIT",
   "keywords": [
@@ -33,12 +33,12 @@
   },
   "autoload": {
     "psr-4": {
-      "GlsGroup\\Sdk\\ParcelProcessing\\": "src/"
+      "C24Toys\\GLS\\Sdk\\ParcelProcessing\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "GlsGroup\\Sdk\\ParcelProcessing\\Test\\": "test/"
+      "C24Toys\\GLS\\Sdk\\ParcelProcessing\\Test\\": "test/"
     }
   },
   "scripts": {

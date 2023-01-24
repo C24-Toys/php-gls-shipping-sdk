@@ -6,13 +6,13 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Service;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Service;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
-use GlsGroup\Sdk\ParcelProcessing\Api\ServiceFactoryInterface;
-use GlsGroup\Sdk\ParcelProcessing\Api\ShipmentServiceInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
-use GlsGroup\Sdk\ParcelProcessing\Http\HttpServiceFactory;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\ServiceFactoryInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\ShipmentServiceInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
+use C24Toys\GLS\Sdk\ParcelProcessing\Http\HttpServiceFactory;
 use Http\Discovery\Exception\NotFoundException;
 use Http\Discovery\HttpClientDiscovery;
 use Psr\Log\LoggerInterface;

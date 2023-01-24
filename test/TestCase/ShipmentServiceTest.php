@@ -6,14 +6,14 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Service;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Service;
 
-use GlsGroup\Sdk\ParcelProcessing\Exception\RequestValidatorException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceException;
-use GlsGroup\Sdk\ParcelProcessing\Http\HttpServiceFactory;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentRequestType;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentResponseType;
-use GlsGroup\Sdk\ParcelProcessing\Test\Provider\ShipmentServiceTestProvider;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\RequestValidatorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Http\HttpServiceFactory;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentRequestType;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentResponseType;
+use C24Toys\GLS\Sdk\ParcelProcessing\Test\Provider\ShipmentServiceTestProvider;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;

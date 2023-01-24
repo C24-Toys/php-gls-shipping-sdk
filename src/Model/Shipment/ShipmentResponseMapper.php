@@ -6,12 +6,12 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Model\Shipment;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel as ApiParcel;
-use GlsGroup\Sdk\ParcelProcessing\Service\ShipmentService\Parcel;
-use GlsGroup\Sdk\ParcelProcessing\Service\ShipmentService\Shipment;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel as ApiParcel;
+use C24Toys\GLS\Sdk\ParcelProcessing\Service\ShipmentService\Parcel;
+use C24Toys\GLS\Sdk\ParcelProcessing\Service\ShipmentService\Shipment;
 
 class ShipmentResponseMapper
 {

@@ -6,13 +6,13 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Test\Provider;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Test\Provider;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\RequestValidatorException;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentResponseType;
-use GlsGroup\Sdk\ParcelProcessing\RequestBuilder\ReturnShipmentRequestBuilder;
-use GlsGroup\Sdk\ParcelProcessing\RequestBuilder\ShipmentRequestBuilder;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\RequestValidatorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentResponseType;
+use C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder\ReturnShipmentRequestBuilder;
+use C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder\ShipmentRequestBuilder;
 use PHPUnit\Framework\Assert;
 
 class ShipmentServiceTestProvider

@@ -6,15 +6,15 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\RequestBuilder;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\RequestBuilder;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\LabelRequestBuilderInterface;
-use GlsGroup\Sdk\ParcelProcessing\Api\ReturnShipmentRequestBuilderInterface;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentRequestType;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\RequestType\Address;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\RequestType\Parcel;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\RequestType\Service;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\RequestType\ServiceInfo;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\LabelRequestBuilderInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\ReturnShipmentRequestBuilderInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\CreateShipmentRequestType;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\RequestType\Address;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\RequestType\Parcel;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\RequestType\Service;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\RequestType\ServiceInfo;
 
 class ReturnShipmentRequestBuilder implements ReturnShipmentRequestBuilderInterface
 {

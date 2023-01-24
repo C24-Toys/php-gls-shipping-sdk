@@ -6,17 +6,17 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Service;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Service;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\AuthenticationException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\DetailedErrorException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\DetailedServiceException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
-use GlsGroup\Sdk\ParcelProcessing\Model\Cancellation\CancelParcelsResponseType;
-use GlsGroup\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status;
-use GlsGroup\Sdk\ParcelProcessing\Serializer\JsonSerializer;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\AuthenticationException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\DetailedErrorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\DetailedServiceException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Cancellation\CancelParcelsResponseType;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status;
+use C24Toys\GLS\Sdk\ParcelProcessing\Serializer\JsonSerializer;
 use Http\Client\HttpClient;
 use Psr\Http\Message\RequestFactoryInterface;
 

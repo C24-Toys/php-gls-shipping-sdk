@@ -6,12 +6,12 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Api;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Api;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\AuthenticationException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\DetailedServiceException;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\Data\ShipmentInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\AuthenticationException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\DetailedServiceException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceException;
 
 /**
  * @api

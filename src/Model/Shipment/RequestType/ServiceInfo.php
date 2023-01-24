@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Model\Shipment\RequestType;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\RequestType;
 
 class ServiceInfo implements \JsonSerializable
 {

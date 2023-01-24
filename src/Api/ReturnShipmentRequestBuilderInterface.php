@@ -1,8 +1,8 @@
 <?php
 
-namespace GlsGroup\Sdk\ParcelProcessing\Api;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Api;
 
-use GlsGroup\Sdk\ParcelProcessing\Exception\RequestValidatorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\RequestValidatorException;
 
 interface ReturnShipmentRequestBuilderInterface extends LabelRequestBuilderInterface
 {

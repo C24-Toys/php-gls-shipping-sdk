@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Model\Shipment;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment;
 
 /**
  * Shipment Response
@@ -38,12 +38,12 @@ class CreateShipmentResponseType
     private $qrCodes;
 
     /**
-     * @var \GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
+     * @var \C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
      */
     private $parcels;
 
     /**
-     * @var \GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]|null
+     * @var \C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]|null
      */
     private $returns;
 
@@ -80,7 +80,7 @@ class CreateShipmentResponseType
     }
 
     /**
-     * @return \GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
+     * @return \C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
      */
     public function getParcels(): array
     {
@@ -88,7 +88,7 @@ class CreateShipmentResponseType
     }
 
     /**
-     * @return \GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
+     * @return \C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ResponseType\Parcel[]
      */
     public function getReturns(): array
     {

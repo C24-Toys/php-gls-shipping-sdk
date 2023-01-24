@@ -6,17 +6,17 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Http;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Http;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
-use GlsGroup\Sdk\ParcelProcessing\Api\ServiceFactoryInterface;
-use GlsGroup\Sdk\ParcelProcessing\Api\ShipmentServiceInterface;
-use GlsGroup\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
-use GlsGroup\Sdk\ParcelProcessing\Http\ClientPlugin\ErrorPlugin;
-use GlsGroup\Sdk\ParcelProcessing\Model\Shipment\ShipmentResponseMapper;
-use GlsGroup\Sdk\ParcelProcessing\Serializer\JsonSerializer;
-use GlsGroup\Sdk\ParcelProcessing\Service\CancellationService;
-use GlsGroup\Sdk\ParcelProcessing\Service\ShipmentService;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\CancellationServiceInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\ServiceFactoryInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\ShipmentServiceInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\ServiceExceptionFactory;
+use C24Toys\GLS\Sdk\ParcelProcessing\Http\ClientPlugin\ErrorPlugin;
+use C24Toys\GLS\Sdk\ParcelProcessing\Model\Shipment\ShipmentResponseMapper;
+use C24Toys\GLS\Sdk\ParcelProcessing\Serializer\JsonSerializer;
+use C24Toys\GLS\Sdk\ParcelProcessing\Service\CancellationService;
+use C24Toys\GLS\Sdk\ParcelProcessing\Service\ShipmentService;
 use Http\Client\Common\Plugin\AuthenticationPlugin;
 use Http\Client\Common\Plugin\ContentLengthPlugin;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;

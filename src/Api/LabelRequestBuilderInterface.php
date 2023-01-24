@@ -1,6 +1,6 @@
 <?php
 
-namespace GlsGroup\Sdk\ParcelProcessing\Api;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Api;
 
 interface LabelRequestBuilderInterface
 {
