@@ -17,29 +17,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
+      - name: Validate composer.json
+        run: composer validate --strict
 
-    - name: Determine composer cache directory
-      id: determine-composer-cache-directory
-      run: echo "::set-output name=composer_cache_dir::$(composer config cache-dir)"
+      - name: Download dependencies
+        run: composer update --no-interaction --no-progress --prefer-stable
 
-    - name: Cache dependencies installed with composer
-      uses: actions/cache@v3
-      with:
-        path: ${{ steps.determine-composer-cache-directory.outputs.composer_cache_dir }}
-        key: php-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Run phpstan
+        run: composer stan
 
-    - name: Composer install dependencies
-      run: composer install
+      - name: Run phpcs
+        run: composer phpcs
 
-    - name: Run phpstan
-      run: composer stan
-
-    - name: Run phpcs
-      run: composer phpcs
-
-    - name: Run phpunit
-      run: composer test
+      - name: Run phpunit
+        run: composer test
