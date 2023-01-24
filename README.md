@@ -153,3 +153,5 @@ $service = $serviceFactory->createCancellationService('basicAuthUser', 'basicAut
 
 $cancelledIds = $service->cancelParcels([$parcelIdA = '12345', $parcelIdB = '54321']);
 ```
+
+Forked from https://github.com/netresearch/gls-sdk-api-parcel-processing
