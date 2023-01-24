@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Exception;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Exception;
 
 use Http\Client\Exception\HttpException;
 

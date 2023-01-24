@@ -6,9 +6,9 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Http\ClientPlugin;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Http\ClientPlugin;
 
-use GlsGroup\Sdk\ParcelProcessing\Exception\DetailedErrorException;
+use C24Toys\GLS\Sdk\ParcelProcessing\Exception\DetailedErrorException;
 use Http\Client\Common\Plugin;
 use Http\Client\Exception\HttpException;
 use Http\Promise\Promise;

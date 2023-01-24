@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Api\Data;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Api\Data;
 
 /**
  * @api

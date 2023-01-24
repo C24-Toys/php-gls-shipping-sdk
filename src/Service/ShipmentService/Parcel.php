@@ -6,9 +6,9 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Service\ShipmentService;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Service\ShipmentService;
 
-use GlsGroup\Sdk\ParcelProcessing\Api\Data\ParcelInterface;
+use C24Toys\GLS\Sdk\ParcelProcessing\Api\Data\ParcelInterface;
 
 class Parcel implements ParcelInterface
 {

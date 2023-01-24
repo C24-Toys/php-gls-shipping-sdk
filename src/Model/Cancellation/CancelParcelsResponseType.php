@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace GlsGroup\Sdk\ParcelProcessing\Model\Cancellation;
+namespace C24Toys\GLS\Sdk\ParcelProcessing\Model\Cancellation;
 
 /**
  * Cancellation Response
@@ -18,12 +18,12 @@ namespace GlsGroup\Sdk\ParcelProcessing\Model\Cancellation;
 class CancelParcelsResponseType
 {
     /**
-     * @var \GlsGroup\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status[]|null
+     * @var \C24Toys\GLS\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status[]|null
      */
     private $status;
 
     /**
-     * @return \GlsGroup\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status[]
+     * @return \C24Toys\GLS\Sdk\ParcelProcessing\Model\Cancellation\ResponseType\Status[]
      */
     public function getStatus(): array
     {
