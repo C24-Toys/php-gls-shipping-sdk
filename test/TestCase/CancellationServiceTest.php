@@ -101,7 +101,7 @@ class CancellationServiceTest extends TestCase
             $this->expectException($errorType);
         }
 
-        $logger = new TestLogger();
+        $logger = new NullLogger();
         $httpClient = new Client();
         $responseFactory = Psr17FactoryDiscovery::findResponseFactory();
         $streamFactory = Psr17FactoryDiscovery::findStreamFactory();
