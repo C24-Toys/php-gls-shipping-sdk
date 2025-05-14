@@ -17,7 +17,7 @@ use C24Toys\GLS\Sdk\ParcelProcessing\Test\Provider\ShipmentServiceTestProvider;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\Test\TestLogger;
+use Psr\Log\NullLogger;
 
 class ShipmentServiceTest extends TestCase
 {
@@ -58,7 +58,7 @@ class ShipmentServiceTest extends TestCase
         string $responseBody,
         callable $assert,
     ): void {
-        $logger = new TestLogger();
+        $logger = new NullLogger();
         $httpClient = new Client();
         $responseFactory = Psr17FactoryDiscovery::findResponseFactory();
         $streamFactory = Psr17FactoryDiscovery::findStreamFactory();

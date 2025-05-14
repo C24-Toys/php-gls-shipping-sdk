@@ -14,7 +14,7 @@ use C24Toys\GLS\Sdk\ParcelProcessing\Http\HttpServiceFactory;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\Test\TestLogger;
+use Psr\Log\NullLogger;
 
 use function file_get_contents;
 
@@ -66,7 +66,7 @@ class CancellationServiceTest extends TestCase
      */
     public function cancelMultiParcel(array $requestedIds, string $responseBody, array $expected): void
     {
-        $logger = new TestLogger();
+        $logger = new NullLogger();
         $httpClient = new Client();
         $responseFactory = Psr17FactoryDiscovery::findResponseFactory();
         $streamFactory = Psr17FactoryDiscovery::findStreamFactory();
